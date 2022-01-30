@@ -15,3 +15,14 @@
 
 ## INSTALL Dependents
 > npm install sekha-api
+
+## ```EXAMPLE```
+``` 
+const skh = require('sekha-api');
+const title = 'surender'
+
+skh.lyric(title)
+    .then(result => {
+     console.log(result)
+});
+```
