@@ -18,7 +18,7 @@
 
 ## ```EXAMPLE```
 ``` 
-const skh = require('sekha-api');
+const skh = require('skh-api');
 const title = 'surender'
 
 skh.lyric(title)
@@ -26,7 +26,7 @@ skh.lyric(title)
      console.log(result)
 });
 
-const skh = require('sekha-api');
+const skh = require('skh-api');
 const q = 'loli'
 
 skh.pinterest(q)
