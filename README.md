@@ -25,4 +25,13 @@ skh.lyric(title)
     .then(result => {
      console.log(result)
 });
+
+// Pinterest Search
+const skh = require('sekha-api');
+const q = 'loli'
+
+skh.pinterest(q)
+    .then(result => {
+     console.log(result)
+});
 ```
