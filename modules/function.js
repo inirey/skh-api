@@ -11,7 +11,7 @@ function otakudesu(judul){
 	let limk = $('#venkonten > div > div.venser > div > div > ul > li:nth-child(1) > h2 > a').attr('href')
 	axios.get(limk).then(({ data }) => {
 	const $$ = cheerio.load(data)
-	result.message = 'By Hexagon'
+	result.message = 'sekha'
 	result.img = $$('#venkonten > div.venser > div.fotoanime').find('img').attr('src')
 	$$('#venkonten > div.venser > div.fotoanime > div.infozin > div').each(function(a, b) {
 		result.judul = $$(b).find('p:nth-child(1)').text().replace('Judul: ','')
@@ -58,7 +58,7 @@ function covid(){
 					const nglo = $(d).find('div:nth-child(5) > strong').text()
 					const up = $(d).find('div.pt-4.text-color-grey.text-1').text().trim()
 				const result = {
-					message: 'By Hexagon',
+					message: 'sekha',
 					indo : {
 						positif_indo: pindo,
 						meninggal_indo: mindo,
@@ -179,7 +179,7 @@ function tebakgambar() {
     const img = link2 + $(b).find('img').attr('data-src')
     const jwb = $(b).find('img').attr('alt')
     result.push({
-    	message: 'By Hexagon',
+    	message: 'sekha',
     	image: img,
     	jawaban: jwb
     })
@@ -506,7 +506,7 @@ function igstalk(username){
 		.then(({ data }) => {
 			const user = data.graphql.user
 			let result = {
-				message: 'By Hexagon',
+				message: 'sekha',
                 id: user.id,
                 biography: user.biography,
                 followers: user.edge_followed_by.count,
@@ -691,7 +691,7 @@ function ttdownloader(url){
 		.then(({ data }) => {
 			const $ = cheerio.load(data)
 			resolve({
-				message: 'By Hexagon',
+				message: 'sekha',
 				nowm: $('div:nth-child(2) > div.download > a').attr('href'),
 				wm: $('div:nth-child(3) > div.download > a').attr('href'),
 				audio: $('div:nth-child(4) > div.download > a').attr('href')
@@ -722,6 +722,3 @@ module.exports.twitter = twitter
 module.exports.fbdown = fbdown
 module.exports.youtube = youtube
 module.exports.ttdownloader = ttdownloader
-
-
-
