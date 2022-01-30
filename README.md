@@ -26,7 +26,6 @@ skh.lyric(title)
      console.log(result)
 });
 
-# Pinterest Search
 const skh = require('sekha-api');
 const q = 'loli'
 
