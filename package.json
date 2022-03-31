@@ -1,6 +1,6 @@
 {
   "name": "skh-api",
-  "version": "2.1.1",
+  "version": "2.0.0",
   "description": "turu",
   "main": "index.js",
   "scripts": {
