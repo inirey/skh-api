@@ -14,7 +14,7 @@
 </p>
 
 ## INSTALL Dependents
-> npm install sekha-api
+> npm install skh-api
 
 ## ```EXAMPLE```
 ``` 
